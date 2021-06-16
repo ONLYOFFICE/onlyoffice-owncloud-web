@@ -9,7 +9,7 @@ const routes = [
       name: "editor",
       meta: { hideHeadbar: true }
     }
-  ]
+];
 
 const appInfo = {
     name: "onlyoffice",
@@ -27,7 +27,7 @@ const appInfo = {
           },
           newFileMenu: {
             menuTitle ($gettext) {
-              return $gettext("New OnlyOffice document")
+              return $gettext("Document")
             },
             icon: "x-office-document"
           },
@@ -49,7 +49,7 @@ const appInfo = {
           },
           newFileMenu: {
             menuTitle ($gettext) {
-              return $gettext("New OnlyOffice spreadsheet")
+              return $gettext("Spreadsheet")
             },
             icon: "x-office-spreadsheet"
           },
@@ -71,7 +71,7 @@ const appInfo = {
           },
           newFileMenu: {
             menuTitle ($gettext) {
-              return $gettext("New OnlyOffice presentation")
+              return $gettext("Presentation")
             },
             icon: "x-office-presentation"
           },
@@ -84,9 +84,9 @@ const appInfo = {
           ]
         }
       ]
-}
+};
 
 export default {
     appInfo,
     routes
-}
+};
