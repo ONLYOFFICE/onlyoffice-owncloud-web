@@ -1,4 +1,5 @@
 import Editor from "./editor.vue"
+import axios from "axios"
 
 const routes = [
     {
@@ -19,12 +20,7 @@ const appInfo = {
     extensions: [
         {
           extension: "docx",
-          handler: function ({ config, extensionConfig, filePath, fileId }) {
-            window.open(
-              `${window.location.origin}/index.html#/onlyoffice/editor/${fileId}?filePath=${encodeURIComponent(filePath)}`,
-              "_self"
-            )
-          },
+          handler: create,
           newFileMenu: {
             menuTitle ($gettext) {
               return $gettext("Document")
@@ -41,12 +37,7 @@ const appInfo = {
         },
         {
           extension: "xlsx",
-          handler: function ({ config, extensionConfig, filePath, fileId }) {
-            window.open(
-              `${window.location.origin}/index.html#/onlyoffice/editor/${fileId}?filePath=${encodeURIComponent(filePath)}`,
-              "_self"
-            )
-          },
+          handler: create,
           newFileMenu: {
             menuTitle ($gettext) {
               return $gettext("Spreadsheet")
@@ -63,12 +54,7 @@ const appInfo = {
         },
         {
           extension: "pptx",
-          handler: function ({ config, extensionConfig, filePath, fileId }) {
-            window.open(
-              `${window.location.origin}/index.html#/onlyoffice/editor/${fileId}?filePath=${encodeURIComponent(filePath)}`,
-              "_self"
-            )
-          },
+          handler: create,
           newFileMenu: {
             menuTitle ($gettext) {
               return $gettext("Presentation")
@@ -85,6 +71,40 @@ const appInfo = {
         }
       ]
 };
+
+function create({ config, extensionConfig, filePath, fileId, mode }) {
+  if (mode != "create") {
+    openEditor(config, fileId, filePath);
+    return;
+  }
+
+  axios({
+    method: "GET",
+    url: config.server + "ocs/v2.php/apps/onlyoffice/api/v1/empty/" + fileId,
+    headers: {
+        authorization: "Bearer " + JSON.parse(sessionStorage.getItem("webStateInSessionStorage")).user.token
+    }
+  })
+  .then(response => {
+    if (response.error) {
+      console.error(error);
+      return;
+    }
+    openEditor(config, fileId, filePath);
+  })
+  .catch(error => {
+      console.error(error);
+  })
+}
+
+function openEditor(config, fileId, filePath) {
+  let url = `${window.location.origin}/index.html#/onlyoffice/editor/${fileId}?filePath=${encodeURIComponent(filePath)}`;
+  if (`${window.location.origin}/` === config.server) {
+    url = url.replace(window.location.origin, config.server + "index.php/apps/web")
+  }
+
+  location.href = url;
+}
 
 export default {
     appInfo,
