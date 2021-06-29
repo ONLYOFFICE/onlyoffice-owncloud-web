@@ -42,12 +42,8 @@ export default {
 
         onRequestClose() {
             let params = {item: null};
-            let filePath = this.filePath.split("/");
-            filePath.shift();
-            filePath.pop();
-
-            if (filePath.length > 0) {
-                params.item = filePath.join("/");
+            if (this.currentFolder) {
+                params.item = this.currentFolder.path;
             }
 
             this.$router.push({name: "files-personal", params});
@@ -124,6 +120,7 @@ export default {
 
     computed: {
         ...mapGetters(["getToken", "configuration", "apps"]),
+        ...mapGetters("Files", ["currentFolder"]),
     },
 
     mounted() {
