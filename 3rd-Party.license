@@ -17,14 +17,6 @@ License File:         rollup.license
 License:              MIT License
 License File:         rollup-plugin-commonjs.license
 
-@rollup/plugin-json - A Rollup plugin which converts .json files to ES6 modules. (https://github.com/rollup/rollup-plugin-json#license)
-License:              MIT License
-License File:         rollup-plugin-json.license
-
-@rollup/plugin-replace - A Rollup plugin which replaces targeted strings in files while bundling. (https://github.com/rollup/rollup-plugin-replace#license)
-License:              MIT License
-License File:         rollup-plugin-replace.license
-
 rollup-plugin-babel - A Rollup plugin for seamless integration between Rollup and Babel. (https://github.com/rollup/rollup-plugin-babel/blob/master/LICENSE.md)
 License:              MIT License
 License File:         rollup-plugin-babel.license

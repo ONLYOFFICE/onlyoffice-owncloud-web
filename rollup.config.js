@@ -4,7 +4,6 @@ import serve from "rollup-plugin-serve"
 import resolve from "rollup-plugin-node-resolve"
 import babel from "rollup-plugin-babel"
 import commonjs from "@rollup/plugin-commonjs"
-import json from "@rollup/plugin-json"
 import builtins from "@erquhart/rollup-plugin-node-builtins"
 import globals from "rollup-plugin-node-globals"
 
@@ -26,7 +25,7 @@ export default {
         }),
         dev && serve({
             contentBase: ["dist"],
-            port: 5566
+            port: process.env.PORT || 5566
         }),
         babel({
           exclude: "node_modules/**",
@@ -35,7 +34,6 @@ export default {
         commonjs({
           include: "node_modules/**"
         }),
-        json(),
         globals(),
         builtins()
     ]
