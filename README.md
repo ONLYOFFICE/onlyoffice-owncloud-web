@@ -64,6 +64,10 @@ Then you'll have to specify path to it in ownCloud config.json.
 * Community Edition (`onlyoffice-documentserver` package)
 * Enterprise Edition (`onlyoffice-documentserver-ee` package)
 
+## ONLYOFFICE Docs editions
+
+ONLYOFFICE offers different versions of its online document editors that can be deployed on your own servers.
+
 The table below will help you to make the right choice.
 
 | Pricing and licensing | Community Edition | Enterprise Edition |
