@@ -11,11 +11,11 @@ The app allows to:
 
 ## Installing ONLYOFFICE Docs
 
-You will need an instance of ONLYOFFICE Docs (Document Server) that is resolvable and connectable both from ownCloud and any end clients. ONLYOFFICE Document Server must also be able to POST to ownCloud directly.
+You will need an instance of ONLYOFFICE Docs (Document Server) that is resolvable and connectable both from ownCloud and any end clients. Document Server must also be able to POST to ownCloud directly.
 
-ONLYOFFICE Document Server and ownCloud can be installed either on different computers, or on the same machine. 
+Document Server and ownCloud can be installed either on different computers, or on the same machine. 
 
-If you use one machine, set up a custom port for Document Server as by default both ONLYOFFICE Document Server and ownCloud work on port 80.
+If you use one machine, set up a custom port for Document Server as by default both Document Server and ownCloud work on port 80.
 
 You can install free [Community version of ONLYOFFICE Docs](https://helpcenter.onlyoffice.com/installation/docs-community-index.aspx) or scalable [Enterprise Edition with pro features](https://helpcenter.onlyoffice.com/installation/docs-enterprise-index.aspx).
 
