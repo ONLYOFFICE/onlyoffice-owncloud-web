@@ -25,9 +25,9 @@ Community Edition vs Enterprise Edition comparison can be found [here](#onlyoffi
 
 You will need:
 * [ownCloud server](https://owncloud.com/download-server/#owncloud-server) with ownCloud Web (it can be compiled from source code or installed from the [official marketplace](https://marketplace.owncloud.com/apps/web)).
-* Official ONLYOFFICE connector. You can install it from the [ownCloud marketplace](https://marketplace.owncloud.com/apps/onlyoffice). The support for ownCloud Web starts from v7.0.0.
+* Official ONLYOFFICE connector. You can install it from the [ownCloud marketplace](https://marketplace.owncloud.com/apps/onlyoffice). The support for ownCloud Web starts from v7.*.
 
-To enable work within ownCloud web, register the connector in the ownCloud config.json:
+To enable work within ownCloud web, register the connector in the ownCloud Web config.json:
 
 * If you installed ownCloud Web from the official marketplace, the path is `<owncloud-root-catalog>/config/config.json`
 * If you compiled it from source code yourself using [this instruction](https://owncloud.dev/clients/web/backend-oc10/#running-web), the path is `<owncloud-web-root-catalog>/config/config.json`.
@@ -54,19 +54,14 @@ Build the resulting file app.js:
 ```
 yarn build
 ```
-You'll find it in the `\dist` folder.
-
-Place the app to the `/js/app.js` folder in the old connector.
-
-Then you'll have to specify path to it in ownCloud config.json.
-
-
-* Community Edition (`onlyoffice-documentserver` package)
-* Enterprise Edition (`onlyoffice-documentserver-ee` package)
+You'll find it in the `\dist` folder. Place the compiled app.js to the folder with [ownCloud-ONLYOFFICE integration app](https://github.com/ONLYOFFICE/onlyoffice-owncloud) and specify path to the file in ownCloud Web config.json.
 
 ## ONLYOFFICE Docs editions
 
 ONLYOFFICE offers different versions of its online document editors that can be deployed on your own servers.
+
+* Community Edition (`onlyoffice-documentserver` package)
+* Enterprise Edition (`onlyoffice-documentserver-ee` package)
 
 The table below will help you to make the right choice.
 
@@ -78,7 +73,7 @@ The table below will help you to make the right choice.
 | Number of users | up to 20 recommended | As in chosen pricing plan |
 | License | GNU AGPL v.3 | Proprietary |
 | **Support** | **Community Edition** | **Enterprise Edition** |
-| Documentation | [Help Center](https://helpcenter.onlyoffice.com/server/docker/opensource/index.aspx) | [Help Center](https://helpcenter.onlyoffice.com/server/integration-edition/index.aspx) |
+| Documentation | [Help Center](https://helpcenter.onlyoffice.com/installation/docs-community-index.aspx) | [Help Center](https://helpcenter.onlyoffice.com/installation/docs-enterprise-index.aspx) |
 | Standard support | [GitHub](https://github.com/ONLYOFFICE/DocumentServer/issues) or paid | One year support included |
 | Premium support | [Buy Now](https://www.onlyoffice.com/support.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubOwncloudWeb) | [Buy Now](https://www.onlyoffice.com/support.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubOwncloudWeb) |
 | **Services** | **Community Edition** | **Enterprise Edition** |
