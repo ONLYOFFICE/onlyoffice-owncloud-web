@@ -24,7 +24,7 @@ Community Edition vs Enterprise Edition comparison can be found [here](#onlyoffi
 ## Installing connector for ownCloud Web
 
 You will need:
-* [ownCloud server v10.7](https://owncloud.com/download-server/#owncloud-server) with ownCloud Web (it can be compiled from source code or installed from the [official marketplace](https://marketplace.owncloud.com/apps/web)).
+* [ownCloud server](https://owncloud.com/download-server/#owncloud-server) with ownCloud Web (it can be compiled from source code or installed from the [official marketplace](https://marketplace.owncloud.com/apps/web)).
 * Official ONLYOFFICE connector. You can install it from the [ownCloud marketplace](https://marketplace.owncloud.com/apps/onlyoffice). The support for ownCloud Web starts from v7.0.0.
 
 To enable work within ownCloud web, register the connector in the ownCloud config.json:
