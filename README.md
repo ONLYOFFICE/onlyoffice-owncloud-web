@@ -82,7 +82,7 @@ The table below will help you to make the right choice.
 | **Interface** | **Community Edition** | **Enterprise Edition** |
 | Tabbed interface                       | + | + |
 | White Label                            | - | - |
-| Integrated test example (node.js)*     | - | + |
+| Integrated test example (node.js)*     | + | + |
 | Mobile web editors | - | + |
 | Access to pro features via desktop     | - | + |
 | **Plugins & Macros** | **Community Edition** | **Enterprise Edition** |
