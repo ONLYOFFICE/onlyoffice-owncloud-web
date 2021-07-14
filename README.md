@@ -25,7 +25,7 @@ Community Edition vs Enterprise Edition comparison can be found [here](#onlyoffi
 
 You will need:
 * [ownCloud server](https://owncloud.com/download-server/#owncloud-server) with ownCloud Web (it can be compiled from source code or installed from the [official marketplace](https://marketplace.owncloud.com/apps/web)).
-* Official ONLYOFFICE connector. You can install it from the [ownCloud marketplace](https://marketplace.owncloud.com/apps/onlyoffice). The support for ownCloud Web starts from v7.*.
+* Official ownCloud ONLYOFFICE integration app. You can install it from the [ownCloud marketplace](https://marketplace.owncloud.com/apps/onlyoffice). The support for ownCloud Web starts from v7.*.
 
 To enable work within ownCloud web, register the connector in the ownCloud Web config.json:
 
@@ -38,10 +38,11 @@ To register the connector, use these lines:
 "external_apps": [
     {
         "id": "onlyoffice",
-        "path": "http(s)://<owncloud-10-server-address>/custom/onlyoffice/js/app.js",
+        "path": "http(s)://<owncloud-10-server-address>/custom/onlyoffice/js/web/onlyoffice.js",
     }
 ]
 ```
+
 ## Compiling the connector for ownCloud Web
 
 Build all the dependencies:
@@ -49,12 +50,12 @@ Build all the dependencies:
 ```
 yarn install
 ```
-Build the resulting file app.js:
+Build the resulting file `web\onlyoffice.js`:
 
 ```
 yarn build
 ```
-You'll find it in the `\dist` folder. Place the compiled app.js to the folder with [ownCloud-ONLYOFFICE integration app](https://github.com/ONLYOFFICE/onlyoffice-owncloud) and specify path to the file in ownCloud Web config.json.
+You'll find it in the `web` folder. Place the `web` folder with the compiled  `onlyoffice.js` to the folder `js` with [ownCloud ONLYOFFICE integration app](https://github.com/ONLYOFFICE/onlyoffice-owncloud) and specify path to the file in ownCloud Web config.json.
 
 ## ONLYOFFICE Docs editions
 

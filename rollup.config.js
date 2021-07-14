@@ -14,7 +14,7 @@ export default {
     output: {
         name: "onlyoffice.js",
         format: "amd",
-        dir: "dist"
+        file: "web/onlyoffice.js"
     },
     plugins: [
         Vue(),
@@ -24,7 +24,7 @@ export default {
           preferBuiltins: true
         }),
         dev && serve({
-            contentBase: ["dist"],
+            contentBase: ["web"],
             port: process.env.PORT || 5566
         }),
         babel({

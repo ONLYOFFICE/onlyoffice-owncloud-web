@@ -1,7 +1,7 @@
 {
   "name": "onlyoffice",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "onlyoffice.js",
   "scripts": {
     "build": "rollup -c",
     "serve": "DEV=true rollup -c -w"
