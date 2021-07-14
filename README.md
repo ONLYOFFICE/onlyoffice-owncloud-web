@@ -81,6 +81,8 @@ The table below will help you to make the right choice.
 | Document Builder Service          | + | + |
 | **Interface** | **Community Edition** | **Enterprise Edition** |
 | Tabbed interface                       | + | + |
+| Dark theme                             | + | + |
+| 150% scaling                           | + | + |
 | White Label                            | - | - |
 | Integrated test example (node.js)*     | + | + |
 | Mobile web editors | - | + |
@@ -111,11 +113,12 @@ The table below will help you to make the right choice.
 | Functions, formulas, equations  | + | + |
 | Table templates                 | + | + |
 | Pivot tables                    | + | + |
+| Data validation                 | + | + |
 | Conditional formatting  for viewing | +** | +** |
 | **Presentation Editor features** | **Community Edition** | **Enterprise Edition** |
 | Font and paragraph formatting   | + | + |
 | Object insertion                | + | + |
-| Animations                      | + | + |
+| Transitions                     | + | + |
 | Presenter mode                  | + | + |
 | Notes                           | + | + |
 | | [Get it now](https://www.onlyoffice.com/download.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubOwncloud)  | [Start Free Trial](https://www.onlyoffice.com/enterprise-edition-free.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubOwncloud)  |
