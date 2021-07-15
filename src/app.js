@@ -12,7 +12,7 @@ const routes = [
 ];
 
 const appInfo = {
-    name: "onlyoffice",
+    name: "ONLYOFFICE",
     id: "onlyoffice",
     icon: "x-office-document",
     isFileEditor: true,
