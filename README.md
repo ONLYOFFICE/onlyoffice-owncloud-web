@@ -116,6 +116,7 @@ The table below will help you to make the right choice.
 | Pivot tables                    | + | + |
 | Data validation                 | + | + |
 | Conditional formatting  for viewing | +** | +** |
+| Sheet Views                     | - | + |
 | **Presentation Editor features** | **Community Edition** | **Enterprise Edition** |
 | Font and paragraph formatting   | + | + |
 | Object insertion                | + | + |
