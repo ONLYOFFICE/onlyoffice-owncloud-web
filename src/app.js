@@ -20,6 +20,7 @@ const appInfo = {
         {
           extension: "docx",
           routeName: "onlyoffice-editor",
+          newTab: true,
           newFileMenu: {
             menuTitle ($gettext) {
               return $gettext("Document")
@@ -37,6 +38,7 @@ const appInfo = {
         {
           extension: "xlsx",
           routeName: "onlyoffice-editor",
+          newTab: true,
           newFileMenu: {
             menuTitle ($gettext) {
               return $gettext("Spreadsheet")
@@ -54,6 +56,7 @@ const appInfo = {
         {
           extension: "pptx",
           routeName: "onlyoffice-editor",
+          newTab: true,
           newFileMenu: {
             menuTitle ($gettext) {
               return $gettext("Presentation")
