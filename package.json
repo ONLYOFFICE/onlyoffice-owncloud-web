@@ -10,6 +10,7 @@
     "@babel/core": "^7.13.10",
     "@erquhart/rollup-plugin-node-builtins": "^2.1.5",
     "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-json" : "^4.1.0",
     "axios": "^0.21.1",
     "rollup": "^2.42.2",
     "rollup-plugin-babel": "^4.3.3",
