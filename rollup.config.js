@@ -6,6 +6,7 @@ import babel from "rollup-plugin-babel"
 import commonjs from "@rollup/plugin-commonjs"
 import builtins from "@erquhart/rollup-plugin-node-builtins"
 import globals from "rollup-plugin-node-globals"
+import json from "@rollup/plugin-json"
 
 const dev = process.env.DEV == "true"
 
@@ -35,6 +36,7 @@ export default {
           include: "node_modules/**"
         }),
         globals(),
-        builtins()
+        builtins(),
+        json()
     ]
 }
