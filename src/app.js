@@ -16,7 +16,7 @@
  *
  */
 
-import Editor from "./editor.vue"
+import Editor from "./editor.vue";
 
 const routes = [
     {
