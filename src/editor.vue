@@ -152,5 +152,6 @@ export default {
     #app > iframe {
         position: fixed;
         height: calc(100vh - 52px);
+        right: 0;
     }
 </style>
