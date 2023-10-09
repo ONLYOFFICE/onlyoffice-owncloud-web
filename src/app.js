@@ -46,11 +46,12 @@ const appInfo = {
             icon: "x-office-document"
           },
           routes: [
-            "files-personal",
-            "files-favorites",
-            "files-shared-with-others",
-            "files-shared-with-me",
-            "files-public-list"
+            "files-spaces-generic",
+            "files-common-favorites",
+            "files-shares-with-others",
+            "files-shares-with-me",
+            "files-trash-generic",
+            "files-public-link"
           ]
         },
         {
@@ -64,11 +65,12 @@ const appInfo = {
             icon: "x-office-spreadsheet"
           },
           routes: [
-            "files-personal",
-            "files-favorites",
-            "files-shared-with-others",
-            "files-shared-with-me",
-            "files-public-list"
+            "files-spaces-generic",
+            "files-common-favorites",
+            "files-shares-with-others",
+            "files-shares-with-me",
+            "files-trash-generic",
+            "files-public-link"
           ]
         },
         {
@@ -82,11 +84,12 @@ const appInfo = {
             icon: "x-office-presentation"
           },
           routes: [
-            "files-personal",
-            "files-favorites",
-            "files-shared-with-others",
-            "files-shared-with-me",
-            "files-public-list"
+            "files-spaces-generic",
+            "files-common-favorites",
+            "files-shares-with-others",
+            "files-shares-with-me",
+            "files-trash-generic",
+            "files-public-link"
           ]
         }
       ]
