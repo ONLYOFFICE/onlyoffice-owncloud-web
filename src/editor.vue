@@ -59,12 +59,13 @@ export default {
         },
 
         onRequestClose() {
-            let params = {item: null};
+            let params = {driveAliasAndItem: null};
+
             if (this.currentFolder) {
-                params.item = this.currentFolder.path;
+                params.driveAliasAndItem = "personal/" + this.currentFolder.ownerId + this.currentFolder.path;
             }
 
-            this.$router.push({name: "files-personal", params});
+            this.$router.push({name: "files-spaces-generic", params});
         },
 
         getDocumentServerUrl() {
