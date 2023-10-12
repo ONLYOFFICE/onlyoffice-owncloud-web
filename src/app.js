@@ -1,4 +1,22 @@
-import Editor from "./editor.vue"
+/**
+ *
+ * (c) Copyright Ascensio System SIA 2023
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */
+
+import Editor from "./editor.vue";
 
 const routes = [
     {
@@ -28,11 +46,12 @@ const appInfo = {
             icon: "x-office-document"
           },
           routes: [
-            "files-personal",
-            "files-favorites",
-            "files-shared-with-others",
-            "files-shared-with-me",
-            "files-public-list"
+            "files-spaces-generic",
+            "files-common-favorites",
+            "files-shares-with-others",
+            "files-shares-with-me",
+            "files-trash-generic",
+            "files-public-link"
           ]
         },
         {
@@ -46,11 +65,12 @@ const appInfo = {
             icon: "x-office-spreadsheet"
           },
           routes: [
-            "files-personal",
-            "files-favorites",
-            "files-shared-with-others",
-            "files-shared-with-me",
-            "files-public-list"
+            "files-spaces-generic",
+            "files-common-favorites",
+            "files-shares-with-others",
+            "files-shares-with-me",
+            "files-trash-generic",
+            "files-public-link"
           ]
         },
         {
@@ -64,11 +84,12 @@ const appInfo = {
             icon: "x-office-presentation"
           },
           routes: [
-            "files-personal",
-            "files-favorites",
-            "files-shared-with-others",
-            "files-shared-with-me",
-            "files-public-list"
+            "files-spaces-generic",
+            "files-common-favorites",
+            "files-shares-with-others",
+            "files-shares-with-me",
+            "files-trash-generic",
+            "files-public-link"
           ]
         }
       ]
