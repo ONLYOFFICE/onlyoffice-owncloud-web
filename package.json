@@ -24,6 +24,6 @@
   },
   "dependencies": {
     "vuex": "^4.1.0",
-    "axios": "^1.4.0"
+    "axios": "^1.6.2"
   }
 }
