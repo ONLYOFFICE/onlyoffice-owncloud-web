@@ -1,5 +1,6 @@
 # Change Log
 
+## 1.1.0
 ## Changed
 - compatibility with owncloud web v7.0.0
 
