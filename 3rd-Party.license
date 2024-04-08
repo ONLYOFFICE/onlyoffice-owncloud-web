@@ -45,6 +45,18 @@ vue-template-compiler - This package can be used to pre-compile Vue 2.0 template
 License:              MIT License
 License File:         vue-template-compiler.license
 
+rollup-plugin-postcss - Seamless integration between Rollup and PostCSS. (https://github.com/egoist/rollup-plugin-postcss/blob/master/LICENSE)
+License:              MIT License
+License File:         rollup-plugin-postcss.license
+
+@vue/compiler-sfc - This package contains lower level utilities that you can use if you are writing a plugin / transform for a bundler or module system that compiles Vue Single File Components (SFCs) into JavaScript. (https://github.com/vuejs/core/blob/main/packages/compiler-sfc/LICENSE)
+License:              MIT License
+License File:         vue-compiler-sfc.license
+
+postcss - PostCSS is a tool for transforming styles with JS plugins. (https://github.com/postcss/postcss/blob/main/LICENSE)
+License:              MIT License
+License File:         postcss.license
+
 axios - Promise based HTTP client for the browser and node.js. (https://github.com/axios/axios/blob/master/LICENSE)
 License:              MIT License
 License File:         axios.license
