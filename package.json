@@ -20,7 +20,7 @@
     "rollup-plugin-serve": "^1.1.0",
     "vue-template-compiler": "^2.7.14",
     "@vue/compiler-sfc": "^3.3.4",
-    "postcss": "8.4.20"
+    "postcss": "8.4.31"
   },
   "dependencies": {
     "vuex": "^4.1.0",
