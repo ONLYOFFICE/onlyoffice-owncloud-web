@@ -1,4 +1,4 @@
-ownCloud Web ONLYOFFICE integration app uses code from the following 3rd party projects:
+ONLYOFFICE app for ownCloud Web uses code from the following 3rd party projects:
 
 
 @babel/core - Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. (https://github.com/babel/babel/blob/main/LICENSE)
